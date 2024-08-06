@@ -1,0 +1,92 @@
+body, html {
+    padding:0;
+    margin:0;
+    font-family:"Barlow", sans-serif; 
+}
+
+
+.box-zero{
+    display:flex;
+    justify-content: end;
+    flex-wrap:wrap;
+}
+
+.box-zero a {
+    color:black;
+    margin: 3em 2em;
+    text-decoration: none;
+    font-size: 1.11rem;
+    transition: 0.35s;
+}
+
+
+.box-zero a:hover {
+    margin: 2.7rem 2em;
+    text-decoration: none;
+}
+
+
+.box-one{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+h1{
+    font-family: "Gupter", serif;
+    margin: 2rem;
+}
+
+
+p{
+    margin: 1.7em; 
+    font-size: 2em;
+    width:60%;
+}
+
+/* Pink shade rgb(234, 178, 206); rgba(203,119,119);*/
+.box-one button {
+    font-family:"Barlow", sans-serif; 
+    font-size: 120%;
+    font-weight:500;
+    padding: 1em 2em;
+    margin: 0.5em;
+    border-radius: 0.5em;
+    border-style: none;
+    background-color:rgba(177, 126, 63, 0.938);
+    transition: 0.7s;
+}
+
+.box-one button:hover{
+    margin: 0em 0.5em;
+    cursor: pointer;
+    background-color:rgba(163, 127, 83, 0.938);
+    box-shadow: 0.5em 0.5em 0.5em rgb(107, 107, 107,0.2);
+}
+
+#c-button{
+    padding: 1em 4em;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 3em 6em;
+    font-size: 1.8em;
+}
+
+.contact li {
+    list-style: none;
+    margin:  1rem  0em;  
+}
+
+
+footer{
+    margin:3em 0;
+    display:flex;
+    justify-content: center;
+    color:gray;
+}
+
+
