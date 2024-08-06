@@ -68,6 +68,26 @@ p{
     padding: 1em 4em;
 }
 
+.c-box{
+    display:flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .contact{
     display: flex;
     flex-direction: column;

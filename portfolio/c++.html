@@ -1,11 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>C++ Projects</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <a href="index.html"> Go Back </a>
+    <div class="c-box">
+      <h1>AVL Tree Implementation for Item Management</h1>
+      <h2>Overview</h2>
+      <p>
+        This project implements an AVL Tree, a self-balancing binary search
+        tree, to efficiently manage and organize items based on their names and
+        prices. The program demonstrates advanced features, including the
+        ability to traverse items using multiple properties and ensuring the
+        tree remains balanced after each operation.
+      </p>
+      <h2>Key Features</h2>
+
+      <ul>
+        <li>
+          Dynamic Insertion and Deletion: Efficiently add and remove items while
+          maintaining the AVL Tree balance.
+        </li>
+        <li>
+          Multi-Property Traversal: Traverse and display items in ascending and
+          descending order based on either name or price.
+        </li>
+        <li>
+          Self-Balancing Mechanism: Automatic balancing through rotations to
+          ensure optimal search, insertion, and deletion times.
+        </li>
+      </ul>
+
+      <h2>Technologies Used</h2>
+
+      <ul></ul>
+      <li>C++: Implementation of the AVL Tree and item management.</li>
+
+      <li>
+        Object-Oriented Design: Use of classes and methods to encapsulate the
+        functionalities of items and the AVL Tree.
+      </li>
+
+      <h2>Functionalities of the Program:</h2>
+      <ol>
+        <li>
+          Adding Nodes: The addNode method inserts new nodes into the tree while
+          ensuring it remains balanced. This involves checking the balance
+          factor and performing rotations if necessary.
+        </li>
+        <li>
+          Deleting Nodes: The deleteNode method removes nodes from the tree,
+          ensuring the tree remains balanced after each deletion.
+        </li>
+        <li>
+          Tree Traversal: Unlike a typical AVL tree that might traverse based on
+          a single property, this implementation can traverse the items using
+          multiple properties, specifically names and prices. This is achieved
+          by implementing separate in-order and reverse in-order traversal
+          methods for each property:
+        </li>
+        <ul>
+          <li>
+            By Name: Methods diplayOrderdByNameAsc() and
+            diplayOrderdByNameDesc() display the items in ascending and
+            descending order by name, respectively.
+          </li>
+          <li>
+            By Price: Methods diplayOrderdByPricAsc() and
+            diplayOrderdByPricDesc() display the items in ascending and
+            descending order by price, respectively.
+          </li>
+        </ul>
+        <li>
+          Balancing: The program maintains the balance of the tree by
+          calculating the height and balance factor of each node, performing
+          necessary rotations to keep the tree height-balanced.
+        </li>
+      </ol>
+
+      <h2>Implementation Details:</h2>
+      <ul>
+        <li>
+          Item Class: Defines the properties and comparison operators for items,
+          enabling sorting by name.
+        </li>
+        <li>
+          AVL Tree Methods: Handles insertion and deletion while maintaining the
+          tree’s balance through rotations (left, right, left-right, and
+          right-left).
+        </li>
+        <li>
+          Traversal Methods: Separate traversal functions allow the tree to be
+          displayed based on different properties (name and price).
+        </li>
+      </ul>
+
+
+      <h2>Files Included</h2>
+      <p>
+      AVL.h: Header file containing class declarations for Item, AVLNode, and
+      AVLTree. AVL.cpp: Implementation file defining the methods for managing
+      items and the AVL Tree operations. main.cpp: Example usage demonstrating
+      the creation of items, adding them to the AVL Tree, and displaying the
+      tree in different orders. Usage To run the project, compile the files
+      together and execute the main program. The example in main.cpp shows how
+      to create items, insert them into the tree, and display the tree's
+      contents in various orders.
+    </p>
+
+
+
+
+      <video width="350" height="250" controls>
+        <source src="AVL-project-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p>
+        Overall, this program showcases an efficient way to manage a collection
+        of items using an AVL Tree, ensuring quick search, insertion, and
+        deletion operations while maintaining balance. The unique capability of
+        traversing items based on multiple properties adds flexibility and
+        demonstrates advanced usage of AVL Trees.
+      </p>
+    </div>
+  </body>
 </html>
