@@ -1,7 +1,9 @@
 body, html {
     padding:0;
     margin:0;
+    line-height: 1.8;
     font-family:"Barlow", sans-serif; 
+    /* background-color: #F5F5F5; */
 }
 
 
@@ -11,8 +13,9 @@ body, html {
     flex-wrap:wrap;
 }
 
-.box-zero a {
+.box-zero a, .links-style {
     color:black;
+    /* color:#004d00;  Don't Know Yet  THE GREEN  #8A9A5B;*/
     margin: 3em 2em;
     text-decoration: none;
     font-size: 1.11rem;
@@ -40,12 +43,11 @@ h1{
 
 p{
     margin: 1.7em; 
-    font-size: 2em;
-    width:60%;
+    font-size: 1.5em;
 }
 
 /* Pink shade rgb(234, 178, 206); rgba(203,119,119);*/
-.box-one button {
+button {
     font-family:"Barlow", sans-serif; 
     font-size: 120%;
     font-weight:500;
@@ -53,14 +55,14 @@ p{
     margin: 0.5em;
     border-radius: 0.5em;
     border-style: none;
-    background-color:rgba(177, 126, 63, 0.938);
+    background-color:#C7A17A;
     transition: 0.7s;
 }
 
-.box-one button:hover{
+button:hover{
     margin: 0em 0.5em;
     cursor: pointer;
-    background-color:rgba(163, 127, 83, 0.938);
+    background-color:#8e7359;
     box-shadow: 0.5em 0.5em 0.5em rgb(107, 107, 107,0.2);
 }
 
@@ -68,45 +70,106 @@ p{
     padding: 1em 4em;
 }
 
-.c-box{
-    display:flex;
-}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.contact{
+.buttom {
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin: 3em 6em;
-    font-size: 1.8em;
+    background-color: #D3D3D3;
+    margin-top: 8em;
 }
 
-.contact li {
-    list-style: none;
-    margin:  1rem  0em;  
+.buttom li{
+    margin:0.5em;
+    margin-top: 2em;
+    font-size: 1.4em;
+    list-style: none; 
 }
 
+
+
+.fa{
+    margin-right: 1em;
+} 
 
 footer{
-    margin:3em 0;
+    align-self: center;
+    padding-top: 2em;
+    padding-bottom: 0.2em;
     display:flex;
     justify-content: center;
     color:gray;
 }
+
+.contact-form-box{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-form-box h1{
+     margin: 0.4rem
+}
+
+.contact-form-box h2{
+    align-self:start;
+    margin: 0.2rem 0.6rem;
+    color:#8A9A5B;
+}   
+
+.contact-form-box p {
+    line-height:1.2em;
+    font-size: 1rem;
+}
+
+.input-box {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5em;
+}
+
+.input-style-2{
+   grid-column: 1 / -1;
+}
+
+#submit-btn{
+    font-size: 1rem;
+    grid-column: 1/-1;
+}
+.input-style{
+    font-family:"Barlow", sans-serif;
+    padding: 1.2em;
+    border-radius: 0.5rem;
+    border: 1.5px solid  #D3D3D3;;
+}
+
+.input-style:hover{
+    border:1.7px dotted #8A9A5B;
+}
+
+input:focus, textarea:focus{
+    outline:none;
+    border:1.7px dotted #8A9A5B;
+}
+
+#message-box{
+    height: 15em;
+}
+input.error, textarea.error {
+    border: 1.5px solid red;
+}
+
+input:focus.error, textarea:focus.error {
+    border: 1.7px solid red;
+}
+
+
+.home-link{
+    text-decoration: none;
+    color: black;
+    margin: 2rem 3rem;
+    
+}
+
+
 
 
