@@ -1,98 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Frank+Ruhl+Libre:wght@300..900&family=Gupter:wght@400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AR:wght@100..400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
-    <link rel="stylesheet" href="style.css" />
-    <title>Home</title>
-  </head>
-  <body>
-    <div class="box-zero">
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="#Resume">Resume</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Frank+Ruhl+Libre:wght@300..900&family=Gupter:wght@400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AR:wght@100..400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Home</title>
+</head>
+
+<body>
+  <img src="logo.png" id="logo">
+
+  <div class="box-zero">
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="#Resume">Resume</a>
+  </div>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" id="closeBtn">&times;</span>
+      <img src="flower.png" alt="Popup Image" class="popup-image">
+      <p> "You deserve flowers. Thank you for visiting my portfolio!"</p>
     </div>
+  </div>
 
-    <div class="box-one">
-      <h1>Hello, I’m Raghad – Computer Science Student & Web Developer</h1>
-      <div class="box-one">
-        <p>
-          I’m passionate about creating innovative and user-friendly web
-          experiences and diving into the world of C++ programming. As I
-          continue my studies, I’m eager to apply my skills to real-world
-          projects and contribute to exciting developments in both web design
-          and software development. My goal is to combine my technical expertise
-          with a creative mindset to build impactful and efficient solutions.
-          Explore my portfolio to see how I’m turning ideas into reality and
-          growing as a developer!
-        </p>
-      </div>
-      <a href="c++.html"><button id="c-button">C++ Projects</button></a>
-      <a><button>Web Design Showcase</button></a>
-    </div>
 
-    <!-- <div class="colour-set">
-      <div
-        class="colour-set-item"
-        style="background-color: rgb(255, 132, 130)"
-      ></div>
-      <div
-        class="colour-set-item"
-        style="background-color: rgb(255, 178, 148)"
-      ></div>
-      <div
-        class="colour-set-item"
-        style="background-color: rgb(248, 216, 165)"
-      ></div>
-      <div
-        class="colour-set-item"
-        style="background-color: rgb(145, 190, 149)"
-      ></div>
-      <div
-        class="colour-set-item"
-        style="background-color: rgb(99, 90, 73)"
-      ></div>
-    </div> -->
 
-    <div class="buttom">
-      <div class="contact">
-        <ul>
-          
-          <li>
-            <section class="fa fa-phone"></section>
-            Phone: +20 1557545254
-            <hr />
-          </li>
-          <li>
+  <div class="box-one">
+    <h1>Hello, I’m Raghad – Computer Science Student & Web Developer</h1>
+
+    <p>
+      I’m passionate about creating innovative and user-friendly web
+      experiences and diving into the world of C++ programming. As I
+      continue my studies, I’m eager to apply my skills to real-world
+      projects and contribute to exciting developments in both web design
+      and software development. My goal is to combine my technical expertise
+      with a creative mindset to build impactful and efficient solutions.
+      Explore my portfolio to see how I’m turning ideas into reality and
+      growing as a developer!
+    </p>
+    <a href="c++.html"><button id="c-button">C++ Projects</button></a>
+    <a href="web.html"><button>Web Design Showcase</button></a>
+  </div>
+
+
+  <div class="buttom">
+    <div class="contact">
+      <ul>
+
+        <li>
+          <a href="https://wa.me/201557545254" style="text-decoration:none;color:black">
+            <section class="fa fa-phone" target="_blank"></section>
+          </a>
+          Phone: +20 1557545254
+          <hr />
+        </li>
+        <li>
+          <a href="mailto:raghaduni1004@gmail.com" target="_blank" style="text-decoration:none;color:black">
             <section class="fa fa-envelope"></section>
-            Email: raghoodi1004@gmail.com
-            <hr />
-          </li>
-          <li>
+          </a>
+          Email: raghaduni1004@gmail.com
+          <hr />
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/raghad-ali-012867293/" target="_blank"
+            style="text-decoration:none;color:black">
             <section class="fa fa-linkedin"></section>
-            LinkedIn: RaghadAli
-            <hr />
-          </li>
-        </ul>
-      </div>
-      <footer>
-        Made with love ♡, care ❀ and passion⊹₊<br />
-        &nbsp;&nbsp; © 2024 Raghad. All rights reserved.
-      </footer>
+          </a>
+          LinkedIn: Raghad Ali
+          <hr />
+        </li>
+      </ul>
     </div>
-  </body>
+    <footer>
+      Made with love ♡, care ❀ and passion⊹₊<br />
+      &nbsp;&nbsp; © 2024 Raghad. All rights reserved.
+    </footer>
+  </div>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+      var popup = document.getElementById('popup');
+      var closeBtn = document.getElementById('closeBtn');
+
+
+      popup.style.display = 'flex';
+
+
+
+      setTimeout(function () {
+        popup.style.display = 'none';
+      }, 900);
+
+      window.addEventListener('click', function (event) {
+        if (event.target === popup) {
+          popup.style.display = 'none';
+        }
+      });
+    });</script>
+</body>
+
 </html>

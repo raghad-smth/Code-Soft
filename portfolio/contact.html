@@ -1,86 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link
     href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-    rel="stylesheet"
-  />
+    rel="stylesheet" />
   <link
     href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Frank+Ruhl+Libre:wght@300..900&family=Gupter:wght@400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AR:wght@100..400&display=swap"
-    rel="stylesheet"
-  />
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-/>
-    
-    <link rel="stylesheet" href="style.css" />
-    <title>Contact</title>
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Contact</title>
 </head>
 
 <body>
-    <a href="index.html" class="home-link"><i class="fa fa-home" style="font-size:36px;margin-top:3rem;"></i></a>
+  <img src="logo.png" id="logo">
+  <br>
+  <a href="index.html" class="home-link"><i class="fa fa-home" style="font-size:36px;"></i></a>
 
-  
-<div class="contact-form-box">
-     
-  <h1>Contact</h1>
-  <div>
-    <h2>Let's get in toutch?</h2>
-    <p>Thank you for reaching out! Please fill out the form below with your name, email address, and message. 
-        <br>Alternatively, you can 
-        email me directly at [raghaduni1004@gmail.com]. 
-    </p>
-   </div> 
+  <div class="contact-form-box">
 
-    <form>   
- 
-        <div class="input-box">
-        <input  class="input-style" placeholder="First Name"  type="text"  required> 
-      
-        <input class="input-style" placeholder="Last Name"   type="text" required> 
-       
-        <input  class="input-style input-style-2" placeholder="Email" type="email" required> 
-        
-       <textarea class="input-style input-style-2 " id="message-box"  placeholder="Message"></textarea>
- 
-        <button id="submit-btn">Submit</button>
-    </div>
-  
-    </form>
+    <h1>Contact</h1>
+    <div>
+      <h2>Let's get in toutch</h2>
+      <p>Thank you for reaching out! Please fill out the form below with your name, email address, and message.
+        <br>Alternatively, you can
+        email me directly at [raghaduni1004@gmail.com].
+      </p>
     </div>
 
-    
-    <div class="buttom">
-        <div class="contact">
-          <ul>
-            
-            <li>
-              <section class="fa fa-phone"></section>
-              Phone: +20 1557545254
-              <hr />
-            </li>
-            <li>
-              <section class="fa fa-envelope"></section>
-              Email: raghoodi1004@gmail.com
-              <hr />
-            </li>
-            <li>
-              <section class="fa fa-linkedin"></section>
-              LinkedIn: RaghadAli
-              <hr />
-            </li>
-          </ul>
-        </div>
-        <footer>
-          Made with love ♡, care ❀ and passion⊹₊<br />
-          &nbsp;&nbsp; © 2024 Raghad. All rights reserved.
-        </footer>
+
+
+    <form id="contact-form" action="C:\Users\raghad\OneDrive\Desktop\Code-Soft\portfolio\index.html" method="POST">
+
+      <div class="input-box">
+        <input class="input-style" id="fname" placeholder="First Name" type="text">
+        <input class="input-style" id="lname" placeholder="Last Name" type="text">
+        <section id="error-name" style="display:none;"> </section>
+
+        <input class="input-style input-style-2" id="email" placeholder="Email" type="email">
+        <section id="error-mail" style="display:none;"> </section>
+
+        <textarea class="input-style input-style-2 " id="message-box" placeholder="Message"></textarea>
+        <section id="error-msg" style="display:none;"> </section>
+
+        <button id="submit-btn" type="submit">Submit</button>
       </div>
+    </form>
 
 
-</div>
+  </div>
+
+  <div class="buttom">
+    <div class="contact">
+      <ul>
+
+        <li>
+          <a href="https://wa.me/201557545254" style="text-decoration:none;color:black">
+            <section class="fa fa-phone" target="_blank"></section>
+          </a>
+          Phone: +20 1557545254
+          <hr />
+        </li>
+        <li>
+          <a href="mailto:raghaduni1004@gmail.com" target="_blank" style="text-decoration:none;color:black">
+            <section class="fa fa-envelope"></section>
+          </a>
+          Email: raghaduni1004@gmail.com
+          <hr />
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/raghad-ali-012867293/" target="_blank"
+            style="text-decoration:none;color:black">
+            <section class="fa fa-linkedin"></section>
+          </a>
+          LinkedIn: Raghad Ali
+          <hr />
+        </li>
+      </ul>
+    </div>
+    <footer>
+      Made with love ♡, care ❀ and passion⊹₊<br />
+      &nbsp;&nbsp; © 2024 Raghad. All rights reserved.
+    </footer>
+  </div>
+  <script src="script.js"> </script>
+
 </body>
+
 </html>

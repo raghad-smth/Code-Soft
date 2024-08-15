@@ -1,175 +1,275 @@
-body, html {
-    padding:0;
-    margin:0;
-    line-height: 1.8;
-    font-family:"Barlow", sans-serif; 
-    /* background-color: #F5F5F5; */
+body,
+html {
+  padding: 0;
+  margin: 0;
+  line-height: 1.8;
+  font-family: "Barlow", sans-serif;
 }
 
-
-.box-zero{
-    display:flex;
-    justify-content: end;
-    flex-wrap:wrap;
+#logo {
+  width: 18rem;
+  height: auto;
+  margin: 0;
+}
+.box-zero {
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
 }
 
-.box-zero a, .links-style {
-    color:black;
-    /* color:#004d00;  Don't Know Yet  THE GREEN  #8A9A5B;*/
-    margin: 3em 2em;
-    text-decoration: none;
-    font-size: 1.11rem;
-    transition: 0.35s;
+.box-zero a,
+.links-style {
+  color: black;
+  margin: 0.5em 2.5em;
+  text-decoration: none;
+  font-size: 1.11rem;
+  transition: 0.35s;
 }
-
 
 .box-zero a:hover {
-    margin: 2.7rem 2em;
-    text-decoration: none;
+  margin: 0.05em 2.5em;
+  text-decoration: none;
 }
 
-
-.box-one{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
+#flowers {
+  width: 150px;
+  height: auto;
+  border-radius: 50px;
+  transition: 0.4s ease;
+}
+#flowers:hover {
+  cursor: pointer;
+  transform: rotate(-10deg) scale(1.1);
+}
+.box-one {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-h1{
-    font-family: "Gupter", serif;
-    margin: 2rem;
+.box-one-kid {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+  align-items: center;
 }
 
+.box-one-kid img {
+  align-self: start;
+}
 
-p{
-    margin: 1.7em; 
-    font-size: 1.5em;
+h1 {
+  font-family: "Gupter", serif;
+}
+
+p {
+  margin: 1.7em;
+  font-size: 1.5em;
 }
 
 /* Pink shade rgb(234, 178, 206); rgba(203,119,119);*/
 button {
-    font-family:"Barlow", sans-serif; 
-    font-size: 120%;
-    font-weight:500;
-    padding: 1em 2em;
-    margin: 0.5em;
-    border-radius: 0.5em;
-    border-style: none;
-    background-color:#C7A17A;
-    transition: 0.7s;
+  font-family: "Barlow", sans-serif;
+  font-size: 120%;
+  font-weight: 500;
+  padding: 1em 2em;
+  margin: 0.5em;
+  border-radius: 0.5em;
+  border-style: none;
+  background-color: #c7a17a;
+  transition: 0.7s;
 }
 
-button:hover{
-    margin: 0em 0.5em;
-    cursor: pointer;
-    background-color:#8e7359;
-    box-shadow: 0.5em 0.5em 0.5em rgb(107, 107, 107,0.2);
+button:hover {
+  margin: 0em 0.5em;
+  cursor: pointer;
+  background-color: #8e7359;
+  box-shadow: 0.5em 0.5em 0.5em rgb(107, 107, 107, 0.2);
 }
 
-#c-button{
-    padding: 1em 4em;
+#c-button {
+  padding: 1em 4em;
 }
-
 
 .buttom {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    background-color: #D3D3D3;
-    margin-top: 8em;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: #d3d3d3;
+  margin-top: 8em;
 }
 
-.buttom li{
-    margin:0.5em;
-    margin-top: 2em;
-    font-size: 1.4em;
-    list-style: none; 
+.buttom li {
+  margin: 0.5em;
+  margin-top: 2em;
+  font-size: 1.4em;
+  list-style: none;
 }
 
-
-
-.fa{
-    margin-right: 1em;
-} 
-
-footer{
-    align-self: center;
-    padding-top: 2em;
-    padding-bottom: 0.2em;
-    display:flex;
-    justify-content: center;
-    color:gray;
+.fa {
+  margin-right: 1em;
 }
 
-.contact-form-box{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
-.contact-form-box h1{
-     margin: 0.4rem
+footer {
+  align-self: center;
+  padding-top: 2em;
+  padding-bottom: 0.2em;
+  display: flex;
+  justify-content: center;
+  color: gray;
 }
 
-.contact-form-box h2{
-    align-self:start;
-    margin: 0.2rem 0.6rem;
-    color:#8A9A5B;
-}   
+.contact-form-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-form-box h1 {
+  margin: 0.4rem;
+}
+
+.contact-form-box h2 {
+  align-self: start;
+  margin: 0.2rem 0.6rem;
+  color: #8a9a5b;
+}
 
 .contact-form-box p {
-    line-height:1.2em;
-    font-size: 1rem;
+  line-height: 1.2em;
+  font-size: 1.1rem;
 }
 
 .input-box {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5em;
 }
 
-.input-style-2{
-   grid-column: 1 / -1;
+.input-style-2 {
+  grid-column: 1 / -1;
 }
 
-#submit-btn{
-    font-size: 1rem;
-    grid-column: 1/-1;
-}
-.input-style{
-    font-family:"Barlow", sans-serif;
-    padding: 1.2em;
-    border-radius: 0.5rem;
-    border: 1.5px solid  #D3D3D3;;
+#submit-btn {
+  font-size: 0.9rem;
+  grid-column: 1/-1;
 }
 
-.input-style:hover{
-    border:1.7px dotted #8A9A5B;
+.input-style {
+  font-family: "Barlow", sans-serif;
+  padding: 1.2em;
+  border-radius: 0.5rem;
+  border: 1.5px solid #d3d3d3;
 }
 
-input:focus, textarea:focus{
-    outline:none;
-    border:1.7px dotted #8A9A5B;
+.input-style:hover {
+  border: 1.7px dotted #8a9a5b;
 }
 
-#message-box{
-    height: 15em;
-}
-input.error, textarea.error {
-    border: 1.5px solid red;
+input::placeholder,
+textarea::placeholder {
+  font-size: 1.1rem;
 }
 
-input:focus.error, textarea:focus.error {
-    border: 1.7px solid red;
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 1.7px dotted #8a9a5b;
 }
 
-
-.home-link{
-    text-decoration: none;
-    color: black;
-    margin: 2rem 3rem;
-    
+#message-box {
+  height: 12em;
 }
 
+#error-name,
+#error-mail,
+#error-msg {
+  color: rgb(186, 27, 27);
+  font-size: 0.7em;
+}
 
+.home-link {
+  text-decoration: none;
+  color: black;
+  margin: 0 3rem;
+}
 
+.about-me div {
+  font-size: 0.9rem;
+}
 
+.imgs-box {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.imgs-box img {
+  width: auto;
+  height: 250px;
+  transition: 0.4s;
+}
+
+.imgs-box img:hover {
+  cursor: pointer;
+  transform: rotate(360deg);
+}
+
+#me {
+  width: 310px;
+  height: auto;
+  border-radius: 50px;
+  transition: 0.4s ease;
+}
+
+#me:hover {
+  cursor: pointer;
+  transform: rotate(-10deg) scale(1.1);
+}
+
+@media (min-width: 1900px) {
+  p {
+    margin: 0.4em 15em;
+    font-size: 2em;
+    line-height: 2;
+  }
+  h1 {
+    font-size: 2.7em;
+  }
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  width: 80%;
+}
+
+.popup-image {
+  border-radius: 70px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
