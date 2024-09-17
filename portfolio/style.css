@@ -19,7 +19,7 @@ html {
 
 .box-zero a,
 .links-style {
-  color:#0000;
+  color:rgb(0,0,0);
   margin: 0.5em 2.5em;
   text-decoration: none;
   font-size: 1.11rem;
@@ -238,6 +238,7 @@ textarea:focus {
   }
   button{
     color:#ffff;
+}
 }
 
 .popup {
