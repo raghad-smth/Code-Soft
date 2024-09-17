@@ -5,31 +5,27 @@ let secondNum = null;
 let opreation = null;
 let ans = null;
 
-let opreationBtns = document.getElementsByClassName('opreations-btn');
-
-
+let opreationBtns = document.getElementsByClassName("opreations-btn");
 
 for (let i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("click", (e) => {
-
-    let aduioEffect = new Audio('click.mp3')
+    let aduioEffect = new Audio("click.mp3");
     aduioEffect.play();
 
     const buttonText = buttons[i].innerText;
 
     if (buttonText === "AC") {
       screen.innerText = "";
-      for(let i=0; i<opreationBtns.length; i++){
-        opreationBtns[i].style.backgroundColor ='#f9a825';
-        opreationBtns[i].style.color = 'white';
-        }
+      for (let i = 0; i < opreationBtns.length; i++) {
+        opreationBtns[i].style.backgroundColor = "#f9a825";
+        opreationBtns[i].style.color = "white";
+      }
     } else if (buttonText === "DEL") {
-     
       screen.innerText = screen.innerText.slice(0, -1);
-      for(let i=0; i<opreationBtns.length; i++){
-        opreationBtns[i].style.backgroundColor ='#f9a825';
-        opreationBtns[i].style.color = 'white';
-        }
+      for (let i = 0; i < opreationBtns.length; i++) {
+        opreationBtns[i].style.backgroundColor = "#f9a825";
+        opreationBtns[i].style.color = "white";
+      }
     } else if (buttonText === "%") {
       screen.innerText += buttonText;
       firstNum = parseFloat(screen.innerText);
@@ -107,7 +103,6 @@ for (let i = 0; i < buttons.length; i++) {
         opreation = null;
       }
       try {
-        
         screen.innerText = eval(ans);
       } catch (error) {
         screen.innerText = "Error";
@@ -118,19 +113,16 @@ for (let i = 0; i < buttons.length; i++) {
   });
 }
 
-
-for(let i=0; i<opreationBtns.length; i++){
+for (let i = 0; i < opreationBtns.length; i++) {
   opreationBtns[i].addEventListener("click", (e) => {
-    if(opreationBtns[i].innerText != '='){
-    opreationBtns[i].style.backgroundColor = 'white';
-    opreationBtns[i].style.color = '#f9a825';
-    }
-    else{
-      for(let i=0; i<opreationBtns.length; i++){
-      opreationBtns[i].style.backgroundColor ='#f9a825';
-      opreationBtns[i].style.color = 'white';
+    if (opreationBtns[i].innerText != "=") {
+      opreationBtns[i].style.backgroundColor = "white";
+      opreationBtns[i].style.color = "#f9a825";
+    } else {
+      for (let i = 0; i < opreationBtns.length; i++) {
+        opreationBtns[i].style.backgroundColor = "#f9a825";
+        opreationBtns[i].style.color = "white";
       }
     }
-  })
- 
+  });
 }
