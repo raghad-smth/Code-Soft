@@ -80,6 +80,7 @@ button {
   border-style: none;
   background-color: #c7a17a;
   transition: 0.7s;
+  color: #0000;
 }
 
 button:hover {
