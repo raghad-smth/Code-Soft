@@ -25,9 +25,6 @@ html {
   font-size: 1.11rem;
   transition: 0.35s;
 }
- a > button {
-  color:#0000;
- }
 
 .box-zero a:hover {
   margin: 0.05em 2.5em;
@@ -238,6 +235,8 @@ textarea:focus {
   h1 {
     font-size: 2.7em;
   }
+  button{
+    color:#ffff;
 }
 
 .popup {
